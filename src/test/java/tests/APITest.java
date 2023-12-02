@@ -65,7 +65,7 @@ public class APITest extends Utils {
 
         response = res.
                 when()
-                .get("posts/20")
+                .get("posts/10")
                 .then().spec(responspec).extract().response();
 
         assertEquals(response.getStatusCode(), 200);
